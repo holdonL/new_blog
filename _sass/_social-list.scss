@@ -1,0 +1,13 @@
+.social-list {
+    @include list-reset;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.social-list__item {
+    a {
+        text-decoration: none;
+        color: $main-black;
+    }
+}

@@ -1,0 +1,10 @@
+baseurl: ""
+markdown: redcarpet
+sass:
+    style: compressed
+
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- .vscode

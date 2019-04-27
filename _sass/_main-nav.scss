@@ -1,0 +1,19 @@
+.main-nav {
+    display: flex;
+    width: 50%;
+}
+
+.main-nav__list {
+    @include list-reset;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 50px;
+}
+
+.main-nav__item {
+    a {
+        text-decoration: none;
+        color: $main-black;
+    }
+}

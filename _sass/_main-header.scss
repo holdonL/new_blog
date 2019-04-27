@@ -1,0 +1,16 @@
+.main-header {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100vw;
+    background-color: $main-yellow ;
+}
+.main-header__logo {
+    position: absolute;
+    top: 30px;
+    left: 65px;
+}
+
+.main-header__nav {
+    margin: 0 auto;
+}
