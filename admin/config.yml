@@ -12,3 +12,7 @@ collections:
       - label: "Глобальные настройки"
         name: "site"
         file: "_data/site.yml"
+        fields:
+          - label: "Логотип"
+            name: "logo"
+            widget: "string"
