@@ -1,0 +1,43 @@
+.page-footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: $main-black;
+    color: $main-white;
+    position: sticky;
+    z-index: -1;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        color: $interactive-color;
+    }
+}
+
+.page-footer__copyright {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 150px;
+    align-self: center;
+}
+
+.page-footer__developer {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    align-self: center;
+}
+
+.page-footer__topbtn {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $interactive-color;
+    padding: 10px;
+    align-self: center;
+    background-image: url("../assets/images/arrow-up.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    border-radius: 50%;
+}

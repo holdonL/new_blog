@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div id="top" class="page-container">
         <header class="main-header">
             <p class="main-header__logo logo-text">
                 {{site.data.site.logo}}
@@ -59,6 +59,17 @@
         <main class="page-main">
             {{content}}
         </main>
+        <footer class="page-footer">
+            <p class="page-footer__copyright">
+                &#169; Copyright 2019
+            </p>
+            <p class="page-footer__developer">
+                Developed by <a href="https://github.com/holdonL" target="_blank" rel="noopener noreferrer">a friend</a> <br>
+                Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> <br>
+                and <a href="https://www.netlifycms.org/" target="_blank" rel="noopener noreferrer">Netlify</a>
+            </p>
+            <a href="#top" class="page-footer__topbtn"></a>
+        </footer>
     </div>
     <!-- REDIRECTING TO CMS ON LOGIN -->
     <script>
