@@ -2,12 +2,32 @@
     @include list-reset;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 150px;
+    margin-left: auto;
 }
 
 .social-list__item {
     a {
-        text-decoration: none;
-        color: $main-black;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        vertical-align: top;
+
+        background-image: url("../assets/images/icon-instagram.svg");
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: center;
+    }
+}
+
+.social-list__item--vk {
+    a {
+        background-image: url("../assets/images/icon-vk.svg");
+    }
+}
+
+.social-list__item--fb {
+    a {
+        background-image: url("../assets/images/icon-facebook.svg");
     }
 }

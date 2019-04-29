@@ -1,0 +1,35 @@
+.front {
+    width: 100%;
+    padding: 100px 0;
+    border-top: 1px solid rgba($main-white, 0.5);
+    color: $main-white;
+}
+
+.front__portrait {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.front__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid $main-black;
+}
+
+.front__name {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.front__lead {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}

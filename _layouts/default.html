@@ -14,39 +14,52 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <p class="main-header__logo logo-text">
-            {{site.data.site.logo}}
-        </p>
-        <nav class="main-header__nav main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="">Blog</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="">About</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-            <ul class="main-nav__social social-list">
-                <li class="social-list__item">
-                    <a href="">Github</a>
-                </li>
-                <li class="social-list__item">
-                    <a href="">Vkontakte</a>
-                </li>
-                <li class="social-list__item">
-                    <a href="">Twitter</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page-container">
+        <header class="main-header">
+            <p class="main-header__logo logo-text">
+                {{site.data.site.logo}}
+            </p>
+            <nav class="main-header__nav main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="">About</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__social social-list">
+                    <li class="social-list__item">
+                        <a href=""><span class="visually-hidden">Анжела в Инстаграме</span></a>
+                    </li>
+                    <li class="social-list__item social-list__item--vk">
+                        <a href=""><span class="visually-hidden">Анжела Вконтакте</span></a>
+                    </li>
+                    <li class="social-list__item social-list__item--fb">
+                        <a href=""><span class="visually-hidden">Анжела на Фейсбуке</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-header__front front">
+                <div class="front__portrait">
+                    <img class="front__photo" src="../assets/images/1.jpg" alt="">
+                </div>
+                <p class="front__name">
+                    Angela Jadan
+                </p>
+                <p class="front__lead">
+                    Hello I am a nice travel blogger. I like food.
+                </p>
+            </div>
+        </header>
 
-    <main>
-        {{content}}
-    </main>
+        <main class="page-main">
+            {{content}}
+        </main>
+    </div>
     <!-- REDIRECTING TO CMS ON LOGIN -->
     <script>
         if (window.netlifyIdentity) {

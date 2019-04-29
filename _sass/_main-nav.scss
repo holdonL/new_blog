@@ -1,19 +1,23 @@
 .main-nav {
     display: flex;
-    width: 50%;
+    width: 100%;
+    padding: 40px 40px;
+    padding-left: 300px;
 }
 
 .main-nav__list {
     @include list-reset;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 300px;
     margin-right: 50px;
 }
 
 .main-nav__item {
     a {
+        font-size: 1.5em;
         text-decoration: none;
-        color: $main-black;
+        color: $main-white;
+        text-transform: uppercase;
     }
 }

@@ -1,7 +1,7 @@
 //// Variables
 
 // Colors
-$main-yellow: #edc80c;
+$main-white: #fff;
 $main-black: #111111;
 $secondary-black: #222222;
 
@@ -28,4 +28,25 @@ body {
     padding: 0;
     font-family: "Open Sans", "Helvetica", sans-serif;
     font-size: 1em;
+    background-image: url("../assets/images/bg-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
