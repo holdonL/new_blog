@@ -1,6 +1,6 @@
 .page-footer {
     width: 100%;
-    padding: 40px 0;
+    padding: 30px 0;
     background-color: $main-black;
     color: $main-white;
     position: sticky;
@@ -8,9 +8,11 @@
     bottom: 0;
     display: flex;
     justify-content: space-around;
+    font-size: 0.9em;
 
     a {
         color: $interactive-color;
+        text-decoration: none;
     }
 }
 
@@ -27,17 +29,22 @@
     padding: 0;
     width: 300px;
     align-self: center;
+    text-align: center;
 }
 
 .page-footer__topbtn {
-    width: 60px;
-    height: 60px;
-    border: 1px solid $interactive-color;
+    width: 50px;
+    height: 50px;
     padding: 10px;
     align-self: center;
-    background-image: url("../assets/images/arrow-up.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60px 60px;
-    border-radius: 50%;
+
+    &:hover .page-footer__icon {
+        fill: $interactive-color;
+    }
+}
+
+.page-footer__icon {
+    width: 50px;
+    height: 50px;
+    @include transition;
 }

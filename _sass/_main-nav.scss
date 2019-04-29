@@ -14,10 +14,16 @@
 }
 
 .main-nav__item {
+
     a {
         font-size: 1.5em;
         text-decoration: none;
         color: $main-white;
         text-transform: uppercase;
+        @include transition;
+    }
+
+    &:hover a {
+        color: $interactive-color;
     }
 }

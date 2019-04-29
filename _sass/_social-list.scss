@@ -6,6 +6,10 @@
     margin-left: auto;
 }
 
+.social-list__icon {
+    @include transition;
+}
+
 .social-list__item {
     a {
         display: inline-block;
@@ -13,21 +17,9 @@
         height: 30px;
         vertical-align: top;
 
-        background-image: url("../assets/images/icon-instagram.svg");
-        background-repeat: no-repeat;
-        background-size: 30px 30px;
-        background-position: center;
-    }
-}
-
-.social-list__item--vk {
-    a {
-        background-image: url("../assets/images/icon-vk.svg");
-    }
-}
-
-.social-list__item--fb {
-    a {
-        background-image: url("../assets/images/icon-facebook.svg");
+        &:hover .social-list__icon,
+        &:focus .social-list__icon {
+            fill: $interactive-color;
+        }
     }
 }
