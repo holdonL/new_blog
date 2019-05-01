@@ -3,7 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 
-media_folder: "assets/unploads" # Media files will be stored in the repo under "assets/unploads"
+media_folder: "/assets/uploads" # Media files will be stored in the repo under "assets/unploads"
 
 collections:
   - name: "website-settings"
@@ -54,6 +54,9 @@ collections:
       - label: "Заголовок"
         name: "title"
         widget: "string"
+      - label: "Баннер"
+        name: "banner"
+        widget: "image"
       - label: "Контент всей страницы"
         name: "body"
         widget: "markdown"
