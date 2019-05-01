@@ -28,3 +28,16 @@ collections:
           - label: "Краткая информация «Обо мне»"
             name: "desc"
             widget: "string"
+  - name: about-me-page
+    label: "Контент страницы «Обо мне»"
+    files: 
+      - label: "Редактировать страницу «Обо мне»"
+        name: "about"
+        file: "about.md"
+        fields:
+          - label: "Заголовок (который, отображается на вкладке)"
+            name: title
+            widget: string
+          - label: "Контент всей страницы"
+            name: body
+            widget: markdown
