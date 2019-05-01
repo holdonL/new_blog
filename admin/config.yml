@@ -24,7 +24,7 @@ collections:
             widget: "string"
       - label: "Страница «Обо мне»"
         name: "about"
-        file: "_data/site.yml"
+        file: "_data/about.yml"
         fields:
           - label: "Заголовок"
             name: "title"
