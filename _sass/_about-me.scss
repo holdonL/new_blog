@@ -2,5 +2,18 @@
     width: 60%;
     margin: 0 auto;
     font-size: 1.2em;
-    line-height: 1.8em;
+    line-height: 1.7em;
+
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-family: "Podkova", serif;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
