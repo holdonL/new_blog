@@ -1,12 +1,9 @@
 <header class="main-header">
     {% include nav.html %}
     <div class="main-header__front front">
-        <h1 class="heading">Обо мне</h1>
+        <h1 class="heading">{{ site.data.site.about.title }}</h1>
         <p class="front__name">
-            Съешь же ещё этих мягких французских булок, да выпей чаю.
-            Съешь же ещё этих мягких французских булок, да выпей чаю.
-            Съешь же ещё этих мягких французских булок, да выпей чаю.
-            Съешь же ещё этих мягких французских булок, да выпей чаю.
+            {{ site.data.site.about.desc }}
         </p>
     </div>
 </header>

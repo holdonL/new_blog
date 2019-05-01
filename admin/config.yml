@@ -9,7 +9,7 @@ collections:
   - name: "website-settings"
     label: "Глобальные настройки"
     files:
-      - label: "Глобальные настройки"
+      - label: "Главная страница"
         name: "site"
         file: "_data/site.yml"
         fields:

@@ -5,17 +5,20 @@
 
 <body>
     <div id="top" class="page-container">
-        <header class="main-header">
+        <header class="main-header main-header--post">
             {% include nav.html %}
-            <div class="main-header__front front">
-                <h1 class="heading">{{ page.title }}</h1>
-                <p class="front__name">
-                    {{ page.date | date_to_string }} - {{ page.author }}
+            <div class="main-header__front front front--post">
+                <h1 class="front__heading heading">{{ page.title }}</h1>
+                <p class="front__author">
+                    {{ page.author }}
+                </p>
+                <p class="front__date">
+                    {{ page.date | date_to_string }}
                 </p>
             </div>
         </header>
 
-        <main class="page-main">
+        <main class="page-main post-main">
             {{content}}
         </main>
 

@@ -2,12 +2,19 @@
 layout: default
 ---
 
-<ul>
+<ul class="post-list">
     {% for post in site.posts %}
-    <li>
-        <img src="{{ post.banner }}" alt="" width="200" height="130">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <p>{{ post.description }}</p>
+    <li class="post-list__item">
+        <a class="post-list__link" href="{{ post.url }}">
+            <img class="post-list__img" src="{{ post.banner }}" alt="">
+            <p class="post-list__title">
+                {{ post.title }}
+            </p>
+        </a>
+        <p class="post-list__desc">
+            {{ post.description }}
+
+        </p>
     </li>
     {% endfor %}
 </ul>
