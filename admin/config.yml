@@ -23,7 +23,7 @@ collections:
             name: "lead"
             widget: "string"
       - label: "Страница «Обо мне»"
-        name: "site"
+        name: "about"
         file: "_data/site.yml"
         fields:
           - label: "Заголовок"
