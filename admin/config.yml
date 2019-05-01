@@ -9,7 +9,7 @@ collections:
   - name: "website-settings"
     label: "Глобальные настройки"
     files:
-      - label: "Главная страница"
+      - label: "Логотип, имя, краткая информация (Главная страница и «Обо мне»)"
         name: "site"
         file: "_data/site.yml"
         fields:
@@ -22,13 +22,9 @@ collections:
           - label: "Краткая информация"
             name: "lead"
             widget: "string"
-      - label: "Страница «Обо мне»"
-        name: "about"
-        file: "_data/about.yml"
-        fields:
-          - label: "Заголовок"
+          - label: "Заголовок «Обо мне»"
             name: "title"
             widget: "string"
-          - label: "Краткое описание"
+          - label: "Краткая информация «Обо мне»"
             name: "desc"
             widget: "string"
