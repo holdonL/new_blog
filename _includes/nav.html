@@ -4,13 +4,13 @@
 <nav class="main-header__nav main-nav">
     <ul class="main-nav__list">
         <li class="main-nav__item {% if page.url == '/index.html' %}current{% endif %}">
-            <a href="index.html">Blog</a>
+            <a href="{{ "/index.html" | relative_url }}">Публикации</a>
         </li>
         <li class="main-nav__item {% if page.url == '/about.html' %}current{% endif %}">
-            <a href="about.html">About</a>
+            <a href="{{ "/about.html" | relative_url }}">Обо мне</a>
         </li>
         <li class="main-nav__item">
-            <a href="">Contact</a>
+            <a class="contact-js" href="">Связаться</a>
         </li>
     </ul>
     <ul class="main-nav__social social-list">
