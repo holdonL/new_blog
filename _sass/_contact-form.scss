@@ -1,0 +1,32 @@
+.contact-form {
+    display: flex;
+    display: none;
+    width: 500px;
+    flex-direction: column;
+    background-color: rgba($main-black, 0.8);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.contact-form__heading {
+    color: $main-white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contact-from__input {
+    width: 100%;
+    padding: 10px 20px;
+    font-family: "Podkova", serif;
+    font-size: 1.3em;
+    color: rgba($main-black, 0.8);
+    border: 1px solid $main-black;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+        border-color: $interactive-color;
+    }
+}
