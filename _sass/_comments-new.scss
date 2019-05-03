@@ -1,0 +1,40 @@
+.comments-new {
+    width: 100%;
+    border-top: 1px solid $main-black;
+}
+
+.comments-new__form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.comments-new__heading {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.comments-new__field {
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+// .comments-new__field--textarea {
+//     width: 100%;
+// }
+
+.comments-new__label {
+    display: block;
+}
+
+.comments-new__submit {
+    width: 100%;
+    padding: 10px 15px;
+    font: inherit;
+    border: 1px solid $main-black;
+    background-color: $interactive-color;
+    cursor: pointer;
+}

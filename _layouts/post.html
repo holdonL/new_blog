@@ -20,8 +20,8 @@
 
         <main class="page-main post-main">
             {{content}}
+            {% include comments-new.html %}
         </main>
-        {% include comments-new.html %}
         {% include footer.html %}
     </div>
     {% include scripts.html %}
