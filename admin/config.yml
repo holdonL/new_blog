@@ -45,14 +45,14 @@ collections:
     label: "Посты"
     folder: "_posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{name}}"
     fields:
       - label: "Layout"
         name: "layout"
         widget: "hidden"
         default: "post"
-      - label: "Layout"
-        name: "slug"
+      - label: "Название файла (только латинница без пробелов через дефис)"
+        name: "name"
         widget: "string"
       - label: "Заголовок"
         name: "title"
