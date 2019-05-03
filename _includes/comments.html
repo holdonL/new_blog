@@ -1,6 +1,6 @@
 <section class="comments">
     <ul class="comments__list">
-        {% assign comments = site.data.comments[{{ page.slug | slugify: "latin" }}] %}
+        {% assign comments = site.data.comments[page.slug] %}
         {% for comment in comments %}
         {% assign commentData = comment[1] %}
         <li class="comments__item comment">
