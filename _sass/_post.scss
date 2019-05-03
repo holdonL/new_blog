@@ -1,0 +1,16 @@
+.post {
+    padding-left: 230px;
+    padding-right: 230px;
+    border-bottom: 1px solid $main-black;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    p {
+        font-family: "Podkova", serif;
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+}

@@ -1,0 +1,19 @@
+<section class="comments">
+    <ul class="comments__list">
+        {% assign comments = site.data.comments[page.slug] %}
+        {% for comment in comments %}
+        {% assign commentData = comment[1] %}
+        <li class="comments__item comment">
+            <p class="comment__name">
+                {{ commentData.name }}
+            </p>
+            <p class="comment__date">
+                {{ commentData.date | date_to_string }}
+            </p>
+            <p class="comments__message">
+                {{ commentData.message }}
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
