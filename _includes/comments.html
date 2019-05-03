@@ -11,7 +11,7 @@
                 {{ commentData.date | date_to_string }}
             </p>
             <p class="comments__message">
-                {{ commentData.message }}
+                {{ commentData.message | markdownify }}
             </p>
         </li>
         {% endfor %}
